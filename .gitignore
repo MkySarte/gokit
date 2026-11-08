@@ -1,0 +1,42 @@
+# Kompilierte Binärdateien (ausgeführt mit go build)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.prof
+
+# GoKit-Binärdatei ohne Endung (Linux/macOS)
+/gokit
+
+# Plattformübergreifende Builds
+/dist/
+
+# Lokale Umgebungsvariablen (Geheimnisse/Passwörter)
+.env
+*.env
+.env.local
+
+# Go-spezifische Tool-Verzeichnisse
+/vendor/
+
+# Lokale Go-Workspace-Konfigurationen
+go.work
+go.work.sum
+
+# Test-Coverage-Berichte
+*.out
+*.coverprofile
+coverage.html
+
+# IDEs und Editoren
+.idea/
+.vscode/
+*.suo
+*.swp
+*~
+
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
