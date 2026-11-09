@@ -36,6 +36,19 @@ func main() {
 
 		fmt.Println("Projekt erfolgreich erstellt:", projectName)
 
+	case "new":
+		if len(os.Args) < 3 {
+			fmt.Println("Fehler: Dateiname fehlt.")
+			return
+		}
+
+		fileName := os.Args[2]
+		err := addNewfile(fileName)
+
+		if err != nil {
+			fmt.Println("Fehler: ", err)
+			return
+		}
 	default:
 		fmt.Println("Unbekannter Befehl:", command)
 		help()
